@@ -556,9 +556,9 @@
   <link href="Tema-Reguler/KirimDigi.ico" rel="icon" type="image/x-icon" />
   <link href="Tema-Reguler/KirimDigi.ico" rel="shortcut icon" type="image/x-icon" />
   <style>
-    /* Sembunyikan galeri */
+    /* Tampilkan galeri */
     .elementor-element-33b0ac2 {
-      display: none !important;
+      display: flex !important;
     }
 
     /* Sembunyikan item timeline lain */
@@ -1369,60 +1369,63 @@
             data-settings='{"gallery_layout":"justified","ideal_row_height_mobile":{"unit":"px","size":204,"sizes":[]},"gap_mobile":{"unit":"px","size":6,"sizes":[]},"gap":{"unit":"px","size":7,"sizes":[]},"ideal_row_height":{"unit":"px","size":285,"sizes":[]},"lazyload":"yes","ideal_row_height_tablet":{"unit":"px","size":150,"sizes":[]},"gap_tablet":{"unit":"px","size":10,"sizes":[]},"link_to":"file","overlay_background":"yes","content_hover_animation":"fade-in"}'
             data-widget_type="gallery.default">
             <div class="elementor-widget-container">
-              <div class="elementor-gallery__container">
-                <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzIwMzMsInVybCI6Imh0dHBzOlwvXC9tZWhuaWthaC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcL2pldC1mb3JtLWJ1aWxkZXJcL2E3MGFhMzVmZTk5MzAxNWY2OTExODI1ODg0NDRlNmFiXC8yMDI0XC8xMFwvQmVsbGEtRGVuaS0zLndlYnAiLCJzbGlkZXNob3ciOiJkOWZkYmJlIn0%3D"
-                  data-elementor-lightbox-slideshow="d9fdbbe" data-elementor-open-lightbox="yes"
-                  href="Tema-Reguler/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-3.webp">
-                  <div aria-label="" class="e-gallery-image elementor-gallery-item__image" data-height="1279"
-                    data-thumbnail="https://mehnikah.com/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-3.webp"
-                    data-width="852" role="img"></div>
-                  <div class="elementor-gallery-item__overlay"></div>
+              <style>
+                /* Grid Galeri Kustom */
+                .custom-gallery-grid {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 12px;
+                  width: 100%;
+                  max-width: 600px;
+                  margin: 0 auto;
+                  padding: 15px;
+                  box-sizing: border-box;
+                }
+                .custom-gallery-grid .gallery-item {
+                  position: relative;
+                  display: block;
+                  overflow: hidden;
+                  border-radius: 12px;
+                  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+                  aspect-ratio: 1 / 1;
+                  background-color: #f7f7f7;
+                  border: 3px solid #fff;
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .custom-gallery-grid .gallery-item img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                  transition: transform 0.4s ease;
+                }
+                .custom-gallery-grid .gallery-item:hover {
+                  transform: translateY(-3px);
+                  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+                }
+                .custom-gallery-grid .gallery-item:hover img {
+                  transform: scale(1.06);
+                }
+                .custom-gallery-grid .gallery-item.span-2 {
+                  grid-column: span 2;
+                  aspect-ratio: 16 / 10;
+                }
+              </style>
+              <div class="custom-gallery-grid">
+                <a class="gallery-item elementor-clickable" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="wedding-gallery" href="3.jpeg">
+                  <img src="3.jpeg" alt="Galeri 3" loading="lazy" />
                 </a>
-                <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzIwMzQsInVybCI6Imh0dHBzOlwvXC9tZWhuaWthaC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcL2pldC1mb3JtLWJ1aWxkZXJcL2E3MGFhMzVmZTk5MzAxNWY2OTExODI1ODg0NDRlNmFiXC8yMDI0XC8xMFwvQmVsbGEtRGVuaS01LndlYnAiLCJzbGlkZXNob3ciOiJkOWZkYmJlIn0%3D"
-                  data-elementor-lightbox-slideshow="d9fdbbe" data-elementor-open-lightbox="yes"
-                  href="Tema-Reguler/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-5.webp">
-                  <div aria-label="" class="e-gallery-image elementor-gallery-item__image" data-height="1222"
-                    data-thumbnail="https://mehnikah.com/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-5.webp"
-                    data-width="815" role="img"></div>
-                  <div class="elementor-gallery-item__overlay"></div>
+                <a class="gallery-item elementor-clickable" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="wedding-gallery" href="4.jpeg">
+                  <img src="4.jpeg" alt="Galeri 4" loading="lazy" />
                 </a>
-                <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzIwMzUsInVybCI6Imh0dHBzOlwvXC9tZWhuaWthaC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcL2pldC1mb3JtLWJ1aWxkZXJcL2E3MGFhMzVmZTk5MzAxNWY2OTExODI1ODg0NDRlNmFiXC8yMDI0XC8xMFwvQmVsbGEtRGVuaS02LTEud2VicCIsInNsaWRlc2hvdyI6ImQ5ZmRiYmUifQ%3D%3D"
-                  data-elementor-lightbox-slideshow="d9fdbbe" data-elementor-open-lightbox="yes"
-                  href="Tema-Reguler/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-6-1.webp">
-                  <div aria-label="" class="e-gallery-image elementor-gallery-item__image" data-height="1224"
-                    data-thumbnail="https://mehnikah.com/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-6-1.webp"
-                    data-width="816" role="img"></div>
-                  <div class="elementor-gallery-item__overlay"></div>
+                <a class="gallery-item elementor-clickable" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="wedding-gallery" href="5.jpeg">
+                  <img src="5.jpeg" alt="Galeri 5" loading="lazy" />
                 </a>
-                <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzIwMzYsInVybCI6Imh0dHBzOlwvXC9tZWhuaWthaC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcL2pldC1mb3JtLWJ1aWxkZXJcL2E3MGFhMzVmZTk5MzAxNWY2OTExODI1ODg0NDRlNmFiXC8yMDI0XC8xMFwvQmVsbGEtRGVuaS0yLndlYnAiLCJzbGlkZXNob3ciOiJkOWZkYmJlIn0%3D"
-                  data-elementor-lightbox-slideshow="d9fdbbe" data-elementor-open-lightbox="yes"
-                  href="Tema-Reguler/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-2.webp">
-                  <div aria-label="" class="e-gallery-image elementor-gallery-item__image" data-height="1200"
-                    data-thumbnail="https://mehnikah.com/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-2.webp"
-                    data-width="800" role="img"></div>
-                  <div class="elementor-gallery-item__overlay"></div>
+                <a class="gallery-item elementor-clickable" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="wedding-gallery" href="6.png">
+                  <img src="6.png" alt="Galeri 6" loading="lazy" />
                 </a>
-                <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzIwMzcsInVybCI6Imh0dHBzOlwvXC9tZWhuaWthaC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcL2pldC1mb3JtLWJ1aWxkZXJcL2E3MGFhMzVmZTk5MzAxNWY2OTExODI1ODg0NDRlNmFiXC8yMDI0XC8xMFwvQmVsbGEtRGVuaS00LndlYnAiLCJzbGlkZXNob3ciOiJkOWZkYmJlIn0%3D"
-                  data-elementor-lightbox-slideshow="d9fdbbe" data-elementor-open-lightbox="yes"
-                  href="Tema-Reguler/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-4.webp">
-                  <div aria-label="" class="e-gallery-image elementor-gallery-item__image" data-height="1049"
-                    data-thumbnail="https://mehnikah.com/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-4.webp"
-                    data-width="699" role="img"></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzIwMzgsInVybCI6Imh0dHBzOlwvXC9tZWhuaWthaC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcL2pldC1mb3JtLWJ1aWxkZXJcL2E3MGFhMzVmZTk5MzAxNWY2OTExODI1ODg0NDRlNmFiXC8yMDI0XC8xMFwvQmVsbGEtRGVuaS0xLndlYnAiLCJzbGlkZXNob3ciOiJkOWZkYmJlIn0%3D"
-                  data-elementor-lightbox-slideshow="d9fdbbe" data-elementor-open-lightbox="yes"
-                  href="Tema-Reguler/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-1.webp">
-                  <div aria-label="" class="e-gallery-image elementor-gallery-item__image" data-height="1328"
-                    data-thumbnail="https://mehnikah.com/wp-content/uploads/jet-form-builder/a70aa35fe993015f691182588444e6ab/2024/10/Bella-Deni-1.webp"
-                    data-width="885" role="img"></div>
-                  <div class="elementor-gallery-item__overlay"></div>
+                <a class="gallery-item span-2 elementor-clickable" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="wedding-gallery" href="7.png">
+                  <img src="7.png" alt="Galeri 7" loading="lazy" />
                 </a>
               </div>
             </div>
